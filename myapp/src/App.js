@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Child from './Child';
 
+// /* 
+//   Class Component :: It creats with the help of "Constructor Function"
+//   new Keyword
+// */
+// class App extends React.Component {
+
+//   constructor(props){
+//     super(props) // Without super() we can't use "this" keyword
+//     this.state  = { 
+//       name : "Bharath Gangireddy" // Local State
+//     }
+//   }
+//     render() {
+//       return <div>
+//         <h2>Parent App : {this.state.name}</h2>
+//        {/*  {new Child().render()} {/* JS way of calling } */}
+//        <Child name = {this.state.name} />{/* Passing as a child to Child Component */}
+
+//       </div>
+    
+//     }
+// }
+
+
+// /* Functional Component :: It creats with the help of "Function Declaration"
+// */
 function App() {
+  let users = ["Bharath" , "Sairam"]
+  const userName = "Bharath"
+  const email = "bh@gmail.com"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div>
+    <h1> App Parent Functional Component</h1>
+    <Child userName =  {users[0]} />
+    <Child userName = {users[1]} />
+  </div>
+  )
 }
 
 export default App;
