@@ -1,7 +1,9 @@
 //import logo from './logo.svg';
-import React from 'react';
 import './App.css';
-import Child from './Child';
+// import React from 'react';
+// import Child from './Child';
+
+
 
 // /* 
 //   Class Component :: It creats with the help of "Constructor Function"
@@ -29,17 +31,25 @@ import Child from './Child';
 
 // /* Functional Component :: It creats with the help of "Function Declaration"
 // */
+// function App() {
+//   let users = ["Bharath" , "Sairam"]
+//   const userName = "Bharath"
+//   const email = "bh@gmail.com"
+//   return (
+//   <div>
+//     <h1> App Parent Functional Component</h1>
+//     <Child userName =  {users[0]} />
+//     <Child userName = {users[1]} />
+//   </div>
+//   )
+// }
+
+import React from 'react';
+import JSXFunction from './1.Jsx';
+
 function App() {
-  let users = ["Bharath" , "Sairam"]
-  const userName = "Bharath"
-  const email = "bh@gmail.com"
-  return (
-  <div>
-    <h1> App Parent Functional Component</h1>
-    <Child userName =  {users[0]} />
-    <Child userName = {users[1]} />
-  </div>
-  )
+  return <JSXFunction />;   // JSX Component Call
 }
 
 export default App;
+

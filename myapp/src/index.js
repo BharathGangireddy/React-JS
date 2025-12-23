@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById('root');
 const createroot = ReactDOM.createRoot(rootElement);
-
-//createroot.render(/* new App().render() */) // Calling by using JS.
-
-createroot.render(<App />)
+//.render(/* new App().render() */) // Calling by using JS.
+createroot.render(<App />);
