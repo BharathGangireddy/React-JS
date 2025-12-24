@@ -45,11 +45,18 @@ import './App.css';
 // }
 
 import React from 'react';
-import JSXFunction from './1.Jsx';
+//import JSXFunction from './1.JSX/JSXParent.js';
+
+//import Parent from './2.Props/1.Parent-to-Child/Parent'
+
+//import Parent from './2.Props/2.Child-to-Parent/Parent'
+
+import Parent from './2.Props/3.Child-to-Child/Parent'
+
+//import Parent from './3.State/Parent.js';
 
 function App() {
-  return <JSXFunction />;   // JSX Component Call
+  return <Parent />;   // JSX Component Call
 }
-
 export default App;
 
