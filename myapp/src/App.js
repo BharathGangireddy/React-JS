@@ -3,8 +3,6 @@ import './App.css';
 // import React from 'react';
 // import Child from './Child';
 
-
-
 // /* 
 //   Class Component :: It creats with the help of "Constructor Function"
 //   new Keyword
@@ -58,7 +56,9 @@ import React from 'react';
 //import A from './3.State/1.Local-State/1.Simple-Data/A'
 
 // import A from './3.State/2.State-Lifiting/1.Simple-Data/A'
-import A from './3.State/3.Props-Drilling/A'
+// import A from './3.State/3.Props-Drilling/A'
+
+import A from './3.State/4.Global-State/1.Context-API/A'
 
 function App() {
   return <A />;   // JSX Component Call
