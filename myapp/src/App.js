@@ -51,12 +51,19 @@ import React from 'react';
 
 //import Parent from './2.Props/2.Child-to-Parent/Parent'
 
-import Parent from './2.Props/3.Child-to-Child/Parent'
+//import Parent from './2.Props/3.Child-to-Child/Parent'
 
 //import Parent from './3.State/Parent.js';
 
+//import A from './3.State/1.Local-State/1.Simple-Data/A'
+
+// import A from './3.State/2.State-Lifiting/1.Simple-Data/A'
+import A from './3.State/3.Props-Drilling/A'
+
 function App() {
-  return <Parent />;   // JSX Component Call
+  return <A />;   // JSX Component Call
 }
+
+
 export default App;
 
