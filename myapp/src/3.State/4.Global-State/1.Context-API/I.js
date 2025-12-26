@@ -1,21 +1,20 @@
 import React, {useContext } from 'react'
-import {x,name , colorContext} from './A'
+import { countContext, nameContext, colorContext}  from './A'
 
 
 function I() {
-  let value =useContext(x) // React Hook must be called inside a Reatc functional Component 
-  let y = useContext(name)
-  let v = useContext(colorContext)
+  let {count, update_count} = useContext(countContext)
+  let name = useContext(nameContext)
+  let {color} = useContext(colorContext)
  
   return (
     <div>
         <h1>
-            I : {x._currentValue} <br />
-            I : {y} <br />
-            I : {v}<br />
-            I : {value}
-          
+            I : {count} <br />
+            I : {name} <br />
+            I : {color}<br />          
         </h1>
+        <button onClick={update_count}>update count</button>
     </div>
   )
 }

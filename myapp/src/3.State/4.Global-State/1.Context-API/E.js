@@ -1,12 +1,18 @@
-import React from 'react'
-import H from './H'
+    import React, { useContext } from 'react'
+    import H from './H'
 
-function E() {
-  return (
-    <div>
-        <H />
-    </div>
-  )
-}
+    import { colorContext } from './A'
 
-export default E
+    function E() {
+        const { color, updateColor } = useContext(colorContext)
+
+    return (
+        <div>
+            <h1>E : {color} </h1>
+            <button onClick={updateColor} >Update Color</button>
+            <H />
+        </div>
+    )
+    }
+
+    export default E
