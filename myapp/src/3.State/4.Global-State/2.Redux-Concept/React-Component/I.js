@@ -3,8 +3,6 @@ import { useSelector } from 'react-redux'
 import {useDispatch} from 'react-redux'
 import { buyCar } from '../Redux_Library/1.car/actionCreator'
 
-
-
 function I() {
   let cars = useSelector((state) => {
         return state.car.noOfCars
