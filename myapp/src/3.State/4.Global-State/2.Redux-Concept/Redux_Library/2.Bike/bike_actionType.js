@@ -1,0 +1,1 @@
+export var BUY_BIKE = 'BUY_BIKE'

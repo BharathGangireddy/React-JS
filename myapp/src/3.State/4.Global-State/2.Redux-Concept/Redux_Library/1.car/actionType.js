@@ -1,0 +1,1 @@
+export var CAR_BUY = 'CAR_BUY'
