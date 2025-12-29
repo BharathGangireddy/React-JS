@@ -64,8 +64,12 @@ import React from 'react';
 //import A from './3.State/4.Global-State/2.Redux-Concept/React-Component/A'
 // import A from './3.State/4.Global-State/3.Redux-Toolkit/React-Component/A'
 //import Data from './3.State/1.Local-State/2.Complex-Data/Data';
-import A from './3.State/4.Global-State/2.Context-API-useReducer/A';
+//import A from './3.State/4.Global-State/2.Context-API-useReducer/A';
+// import A from './4.Side-Effects/1.Default-Behaviour.js/A';
+
+import A from './4.Side-Effects/2.Runs-Conditionally.js/A';
 function App() {
+
   return <A />;   // JSX Component Call
 //  return <Data />
 }
