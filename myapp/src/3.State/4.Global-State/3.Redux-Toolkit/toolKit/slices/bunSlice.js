@@ -21,7 +21,7 @@ let bunReducer = createSlice({
     initialState,
     reducers : {
         buyBun : (state) => {
-            state.noOfBuns -=1
+            state.noOfBuns -= 1
         } 
     }
 })
