@@ -71,7 +71,9 @@ import React from 'react';
 //import Parentt from './4.Destructuring/Parentt';
 //import Parent from './5.Performance/2.Fragment/Parent';
 
-import Parent from './5.Performance/1.Conditional-Rendering/Parent';
+//import Parent from './5.Performance/1.Conditional-Rendering/Parent';
+
+import Parent from './6.Map(loops-array)/Parent';
 function App() {
 
 return <Parent />;
