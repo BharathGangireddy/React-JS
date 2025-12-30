@@ -67,10 +67,15 @@ import React from 'react';
 //import A from './3.State/4.Global-State/2.Context-API-useReducer/A';
 // import A from './4.Side-Effects/1.Default-Behaviour.js/A';
 
-import A from './4.Side-Effects/2.Runs-Conditionally.js/A';
+//import A from './7.Side-Effects/2.Runs-Conditionally.js/A';
+//import Parentt from './4.Destructuring/Parentt';
+//import Parent from './5.Performance/2.Fragment/Parent';
+
+import Parent from './5.Performance/1.Conditional-Rendering/Parent';
 function App() {
 
-  return <A />;   // JSX Component Call
+return <Parent />;
+  //return <A />;   // JSX Component Call
 //  return <Data />
 }
 

@@ -1,0 +1,33 @@
+.form-container {
+    height: 200px;
+    width: 400px;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 100px auto;
+    align-self: start;
+ }
+
+ .email , .password{
+    margin: 20px;
+
+ }
+ label {
+    margin-right: 20px;
+ }
+
+ input{
+    padding: 4px;
+ }
+ 
+
+
+.profile-container {
+    width: 600px;
+    margin-left: 100px auto;
+    padding-left: 100px;
+    
+}
+.img {
+    height:300px ;
+    width: 400px;
+}
