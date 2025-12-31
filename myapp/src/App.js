@@ -1,5 +1,4 @@
 //import logo from './logo.svg';
-import './App.css';
 // import React from 'react';
 // import Child from './Child';
 
@@ -73,11 +72,22 @@ import React from 'react';
 
 //import Parent from './5.Performance/1.Conditional-Rendering/Parent';
 
-import Parent from './6.Map(loops-array)/Parent';
-function App() {
+//import Parent from './6.Map(loops-array)/Parent';
 
-return <Parent />;
-  //return <A />;   // JSX Component Call
+//import A from './9.Side-Effects/4.Cleanup-Tasks/A';
+//import A from './9.Side-Effects/4.Cleanup-Tasks/A';
+import './App.css';
+import Parent from './9.Side-Effects/5.ApiCalls(only GET-request)/Parent';
+//import Container from './9.Side-Effects/4.Cleanup-Tasks/Container';
+
+function App() {
+  return (
+  <React.Fragment>
+      <Parent />
+  </React.Fragment>
+  )
+  //return <Parent />;
+ // return <Container />;   // JSX Component Call
 //  return <Data />
 }
 

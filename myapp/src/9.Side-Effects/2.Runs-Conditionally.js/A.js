@@ -14,11 +14,6 @@ function A() {
     console.log("effect runs")
     document.title = domCount // Updates the title of the Page 
   }, [domCount]) // runs based on Condition.
-
-
-
-
-
   return (
     <div>
       <h1>Normal Count : {normalCount}</h1>
