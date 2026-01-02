@@ -86,7 +86,10 @@ import React from 'react';
 //import Container from './9.Side-Effects/4.Cleanup-Tasks/Container';
 
 //import InputElement from './11.Refs Concept/2.Refer-Value/Value';
-import Value from './11.Refs Concept/2.Refer-Value/Value';
+//import Value from './11.Refs Concept/2.Refer-Value/Value';
+import Count1 from './5.Performance/3.How-To-Remove-Dupliate-Logic/Count1';
+import Count2 from './5.Performance/3.How-To-Remove-Dupliate-Logic/Count2';
+import Count3 from './5.Performance/3.How-To-Remove-Dupliate-Logic/Count3';
 function App() {
   return (
   <React.Fragment>
@@ -94,7 +97,10 @@ function App() {
     {/* <A /> */}
     {/* <Variables /> */}
     {/* <InputElement /> */}
-    <Value />
+    {/* <Value /> */}
+    <Count1 />
+    <Count2 />
+    <Count3 />
       </React.Fragment>
   )
   //return <Parent />;
