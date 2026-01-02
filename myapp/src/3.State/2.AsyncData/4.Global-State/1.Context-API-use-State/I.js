@@ -1,21 +1,8 @@
-import React, {useContext } from 'react'
-import { countContext, nameContext, colorContext}  from './A'
-
+import React from 'react'
 
 function I() {
-  let {count, update_count} = useContext(countContext)
-  let name = useContext(nameContext)
-  let {color} = useContext(colorContext)
- 
   return (
-    <div>
-        <h1>
-            I : {count} <br />
-            I : {name} <br />
-            I : {color}<br />          
-        </h1>
-        <button onClick={update_count}>update count</button>
-    </div>
+    <div>I</div>
   )
 }
 

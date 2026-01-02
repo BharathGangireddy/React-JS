@@ -77,13 +77,17 @@ import React from 'react';
 //import A from './9.Side-Effects/4.Cleanup-Tasks/A';
 //import A from './9.Side-Effects/4.Cleanup-Tasks/A';
 import './App.css';
-import Parent from './9.Side-Effects/5.ApiCalls(only GET-request)/Parent';
+import A from './3.State/2.AsyncData/4.Global-State/1.Context-API-use-State/A';
+//import A from './3.State/2.AsyncData/1.Local-State/2.Complex-Data(useReducer)/A';
+//import Parent from './9.Side-Effects/5.ApiCalls(only GET-request)/Parent';
 //import Container from './9.Side-Effects/4.Cleanup-Tasks/Container';
 
 function App() {
   return (
   <React.Fragment>
-      <Parent />
+    {/* <Parent /> */}
+    <A />
+    
   </React.Fragment>
   )
   //return <Parent />;

@@ -1,9 +1,19 @@
-import React from 'react'
+// import React, { useContext } from 'react'
+// import { countContext } from './A'
+// function D() {
+//     var {count ,updateCount} = useContext(countContext)
+//     console.log(count);
+//     var updateCountFunction = () => {
+//         updateCount(count+=1)
+//     } 
 
-function D() {
-  return (
-    <div>D</div>
-  )
-}
 
-export default D
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={()=> updateCountFunction()}>updateCount</button>
+//     </div>
+//   )
+// }
+
+// export default D

@@ -6,8 +6,21 @@ function Parent() {
   var [error , setError]  = useState(null)
     
 
-  let getData = () => {
-    setLoading(true)
+  // let getData = () => {
+  //   setLoading(true)
+  //   fetch('https://jsonplaceholder.typicode.com/posts')
+  //   .then(response => response.json())
+  //   .then(data =>{
+  //      console.log(data)
+  //      setData(data)
+  //      setLoading(false)
+  //   })
+  //   .catch(e => {
+  //     setError(e.message)
+  //   })
+  // }
+  useEffect(()=> {
+setLoading(true)
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then(data =>{
@@ -18,27 +31,14 @@ function Parent() {
     .catch(e => {
       setError(e.message)
     })
-  }
-//   useEffect(()=> {
-// setLoading(true)
-//     fetch('https://jsonplaceholder.typicode.com/posts')
-//     .then(response => response.json())
-//     .then(data =>{
-//        console.log(data)
-//        setData(data)
-//        setLoading(false)
-//     })
-//     .catch(e => {
-//       setError(e.message)
-//     })
 
-//   } , [])
+  } , [])
    
-   
+   console.log("render")
   return (
     <div>
         <h1>Posts</h1>
-        <button onClick={()=> getData()}>Get Data</button>
+        {/* <button onClick={()=> getData()}>Get Data</button> */}
         { 
           loading ? <h1>Loadin...... {loading}</h1> : error ? <h3>{error.message}</h3> :
          

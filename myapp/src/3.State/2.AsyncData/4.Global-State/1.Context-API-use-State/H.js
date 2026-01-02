@@ -1,12 +1,10 @@
-import React, { useContext } from 'react'
-import {countContext} from './A'
+import React from "react"
 
 function H() {
-    var {count} = useContext(countContext)
-  return (
+    return(
     <div>
         <h1>
-            H : {count}
+            H 
         </h1>
     </div>
   )
