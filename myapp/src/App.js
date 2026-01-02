@@ -76,25 +76,30 @@ import React from 'react';
 
 //import A from './9.Side-Effects/4.Cleanup-Tasks/A';
 //import A from './9.Side-Effects/4.Cleanup-Tasks/A';
-import './App.css';
-import A from './3.State/2.AsyncData/4.Global-State/1.Context-API-use-State/A';
+//import './App.css';
+//import InputElement from './11.Refs Concept/1.Refer-DOM-Element/InputElement';
+
+//import A from './3.State/2.AsyncData/4.Global-State/1.Context-API-use-State/A';
+//import Variables from './10.NormalvsStatevsReff Variable/Variables';
 //import A from './3.State/2.AsyncData/1.Local-State/2.Complex-Data(useReducer)/A';
 //import Parent from './9.Side-Effects/5.ApiCalls(only GET-request)/Parent';
 //import Container from './9.Side-Effects/4.Cleanup-Tasks/Container';
 
+//import InputElement from './11.Refs Concept/2.Refer-Value/Value';
+import Value from './11.Refs Concept/2.Refer-Value/Value';
 function App() {
   return (
   <React.Fragment>
     {/* <Parent /> */}
-    <A />
-    
-  </React.Fragment>
+    {/* <A /> */}
+    {/* <Variables /> */}
+    {/* <InputElement /> */}
+    <Value />
+      </React.Fragment>
   )
   //return <Parent />;
  // return <Container />;   // JSX Component Call
 //  return <Data />
 }
-
-
 export default App;
 
