@@ -40,8 +40,6 @@
 //   </div>
 //   )
 // }
-
-import React from 'react';
 //import JSXFunction from './1.JSX/JSXParent.js';
 
 //import Parent from './2.Props/1.Parent-to-Child/Parent'
@@ -92,7 +90,11 @@ import React from 'react';
 // import Count3 from './5.Performance/3.How-To-Remove-Dupliate-Logic/Count3';
 // import Home from './12.Routing/Home';
 //import Products from './12.Routing/Products';
-import Parent from './12.Routing/Parent';
+//import Parent from './12.Routing/Parent';
+import React from 'react';
+import Parent from './12.Routing/2.Routing-Practice-2/Parent-Route-container';
+//import Parent from './12.Routing/2.Routing-Practice-2/Parent';
+
 function App() {
   return (
   <React.Fragment>
@@ -104,7 +106,8 @@ function App() {
     {/* <Count1 />
     <Count2 />
     <Count3 /> */}
-   <Parent />
+
+    <Parent />
       </React.Fragment>
   )
   //return <Parent />;
