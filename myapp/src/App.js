@@ -92,7 +92,8 @@
 //import Products from './12.Routing/Products';
 //import Parent from './12.Routing/Parent';
 import React from 'react';
-import Parent from './12.Routing/2.Routing-Practice-2/Parent-Route-container';
+import Parent from './5.Performance/4.VirtualDOM/Parent';
+//import Parent from './12.Routing/2.Routing-Practice-2/Parent-Route-container';
 //import Parent from './12.Routing/2.Routing-Practice-2/Parent';
 
 function App() {
