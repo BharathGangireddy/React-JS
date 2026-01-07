@@ -1,17 +1,20 @@
-import React from 'react'
+
+
+import React, { useState } from 'react'
 
 function Child(props) {
-    var {num } = props
-    console.log('Child render')
-    // var updateNum = () => {
-    //     setNum(num+1)
-    // }
+  var {num} = props
+   // var {objName} = props
+  // var {name}  = objName
+
+  // 
+  // console.log(objName)
+  console.log('child render')
   return (
     <div>
-        <p>Child Component : {num}</p>
-        {/* <button onClick = {() => updateNum()}></button> */}
+      <h1>num : {num}</h1>
     </div>
   )
 }
 
-export default React.memo(Child) // checks for updates , if any re-renders , if no does not re render
+export default React.memo(Child)

@@ -92,7 +92,10 @@
 //import Products from './12.Routing/Products';
 //import Parent from './12.Routing/Parent';
 import React from 'react';
+//import A from './3.State/2.AsyncData/4.Global-State/2.Context-API-useReducer/A';
+//import A from './3.State/1.SyncData/4.Global-State/2.Context-API-useReducer/A';
 import Parent from './5.Performance/4.VirtualDOM/Parent';
+//import A from './3.State/2.AsyncData/4.Global-State/1.Context-API-use-State/A';
 //import Parent from './12.Routing/2.Routing-Practice-2/Parent-Route-container';
 //import Parent from './12.Routing/2.Routing-Practice-2/Parent';
 
@@ -107,8 +110,10 @@ function App() {
     {/* <Count1 />
     <Count2 />
     <Count3 /> */}
-
+      
     <Parent />
+    {/* <A /> */}
+
       </React.Fragment>
   )
   //return <Parent />;

@@ -1,50 +1,33 @@
-import React, { useContext, useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import B from './B'
 import C from './C'
 
-export var countContext = React.createContext(0)
+export const StoreContext = React.createContext()
+
 function A() {
-// console.log(store._currentValue) // We can access the stored data(bad practice)
-// console.log(useContext(store))   // best
+  const [data, setData] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
-
-
-var [loading, setLoading] = useState(false)
-var [arrayData , dataFromServer] = useState([])
-var [error , setErrorMessage] = useState(null)
-
-
-useEffect(() => {
-    setLoading(true)
+  useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response => response.json())
-    .then(data => {
-      dataFromServer(data)
-      setLoading(false)
-      console.log(data)
-    })
-    
-    .catch(e => {
-     setErrorMessage(e.message)
-    })
-},[])
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to fetch data')
+        return res.json()
+      })
+      .then(result => setData(result))
+      .catch(err => setError(err.message))
+      .finally(() => setLoading(false))
+  }, [])
+
+  if (loading) return <h1>Loading...</h1>
+  if (error) return <h1>{error}</h1>
 
   return (
-   
-    <div>
-      {
-        loading ? <h1>loading.......</h1> : error ? <h1>{error.message}</h1> :
-         arrayData.map(eachItem => {
-          return(
-            <div key= {eachItem.id}>
-              <h1>Title :{eachItem.title}</h1>
-              <p>Body: {eachItem.body}</p>
-            </div>
-          )
-        })
-      }
-     
-    </div>
+    <StoreContext.Provider value={data}>
+      <B />
+      <C />
+    </StoreContext.Provider>
   )
 }
 

@@ -1,58 +1,84 @@
-import React, { useContext, useReducer } from 'react'
-import B from './B'
-import C from './C'
+// import React, { useEffect, useReducer } from 'react'
 
-export var countContext = React.createContext()//initial state
+// const store = React.createContext();
 
-//console.log(globalStore._currentValue)
+// function A() {
+//   const initialState = {
+//   isLoading: false,
+//   apiData: [],
+//   error: null
+// }
+
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case 'FETCH_LOADING':
+//       return {
+//         ...state,
+//         isLoading: true,
+//         error: null
+//       }
+
+//     case 'FETCH_SUCCESS':
+//       return {
+//         ...state,
+//         isLoading: false,
+//         apiData: action.payload
+//       }
+
+//     case 'FETCH_ERROR':
+//       return {
+//         ...state,
+//         isLoading: false,
+//         error: action.payload
+//       }
+
+//     default:
+//       return state
+//   }
+// }
+
+// useEffect(()=>{
+//   fetch('https://jsonplaceholder.typicode.com/posts')
+//   initialState.isLoading = true
+//   .then(response => {
+//     if(!response.ok) {
+//       throw new Error ("Fetch failure")
+//     }return response.json()
+//     .then(data => 
+//       initialState.apiData = data,
+//       initialState.isLoading = false
+//     ) 
+//   })
+// },[])
+
+
+// let [Localstate , dispatch] = useReducer(reducer ,initialState)
+// return (
+//   <div>
+//     <h1>{Localstate.count}</h1>
+//       <p>{Localstate.apiData}</p>
+
+//       {
+//     Localstate.isLoading ? 
+//         <h1>Loading...</h1> : Localstate.error
+//           ? <h1>{Localstate.error}</h1> :
+//           <h1>{Localstate.apiData}</h1>
+      
+//     }
+
+      
+//   </div>
+// )
+// }
+
+// export default A
+
+import React from 'react'
+
 function A() {
-
-  let initialCount = {
-    count : 0 // Local State
-  }
-
-  let reducer = (state = initialCount , action)=> {
-    switch(action.type) {
-       case 'increase' :
-        return {
-          count : state.count +1
-        }      
-      break;
-      case 'decrease' :
-        return {
-          count : state.count -1
-        }
-      break;
-      case 'reset' :
-        return {
-          count : state.count = 0
-        }
-      break 
-      default :
-      return state
-    }
-  }
-
-  let [Localstate , dispatch] = useReducer(reducer , initialCount)
- 
   return (
-    <div>
-      <h1>
-        A  {Localstate.count}
-      </h1>
-    <countContext.Provider value  = {{Localstate , dispatch}} >
-         <B />
-        <C />
-    </countContext.Provider>
-   
-    </div>
+    <div>A</div>
   )
 }
 
 export default A
-
-
- /* // var value = globalStore._currentValue
-  // console.log(value) // its a bad Practice
-  var value = useContext(globalStore)
-  console.log(value) */
