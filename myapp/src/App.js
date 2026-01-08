@@ -92,14 +92,21 @@
 //import Products from './12.Routing/Products';
 //import Parent from './12.Routing/Parent';
 import React from 'react';
-import Controlled from './11.Refs Concept/3.ControlledvsUncontrolledComponent/Controlled';
-import Uncontrolled from './11.Refs Concept/3.ControlledvsUncontrolledComponent/Uncontrolled';
+import Parent from './ClassComponents/EventBinding/Parent';
+//import Parent from './ClassComponents/Destructuring/Parent';
+// import Controlled from './11.Refs Concept/3.ControlledvsUncontrolledComponent/Controlled';
+// import Uncontrolled from './11.Refs Concept/3.ControlledvsUncontrolledComponent/Uncontrolled';
 //import A from './3.State/2.AsyncData/4.Global-State/2.Context-API-useReducer/A';
+//import Parent from './ClassComponents/components/Parent';
+//  import A from './3.State/2.AsyncData/4.Global-State/2.Context-API-useReducer/A';
 //import A from './3.State/1.SyncData/4.Global-State/2.Context-API-useReducer/A';
 //import Parent from './5.Performance/4.VirtualDOM/Parent';
 //import A from './3.State/2.AsyncData/4.Global-State/1.Context-API-use-State/A';
 //import Parent from './12.Routing/2.Routing-Practice-2/Parent-Route-container';
 //import Parent from './12.Routing/2.Routing-Practice-2/Parent';
+
+
+//import Parent from './ClassComponents/Props/Parent';
 
 function App() {
   return (
@@ -115,9 +122,16 @@ function App() {
       
     {/* <Parent /> */}
     {/* <A /> */}
-    <Controlled />
-    <Uncontrolled />
+    {/* <Controlled />
+    <Uncontrolled /> */}
+    {/* <A /> */}
+      {/* <Parent /> */}
+      {/* {
+        new Parent().render()
+      } */}
 
+      {/* <Parent /> */}
+        <Parent />
       </React.Fragment>
   )
   //return <Parent />;

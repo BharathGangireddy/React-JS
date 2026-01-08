@@ -1,84 +1,77 @@
-// import React, { useEffect, useReducer } from 'react'
+  // import React, { useEffect, useReducer } from 'react'
 
-// const store = React.createContext();
+  // // API CALLS USING CONTEXT API AND useReducer HOOK
 
-// function A() {
-//   const initialState = {
-//   isLoading: false,
-//   apiData: [],
-//   error: null
-// }
+  // const store = React.createContext() 
 
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case 'FETCH_LOADING':
-//       return {
-//         ...state,
-//         isLoading: true,
-//         error: null
-//       }
+  // function A() {
+  //   const initialState = {
+  //     isLoading : false , 
+  //     apiData : [],
+  //     error :  null
+  //   }
 
-//     case 'FETCH_SUCCESS':
-//       return {
-//         ...state,
-//         isLoading: false,
-//         apiData: action.payload
-//       }
-
-//     case 'FETCH_ERROR':
-//       return {
-//         ...state,
-//         isLoading: false,
-//         error: action.payload
-//       }
-
-//     default:
-//       return state
-//   }
-// }
-
-// useEffect(()=>{
-//   fetch('https://jsonplaceholder.typicode.com/posts')
-//   initialState.isLoading = true
-//   .then(response => {
-//     if(!response.ok) {
-//       throw new Error ("Fetch failure")
-//     }return response.json()
-//     .then(data => 
-//       initialState.apiData = data,
-//       initialState.isLoading = false
-//     ) 
-//   })
-// },[])
-
-
-// let [Localstate , dispatch] = useReducer(reducer ,initialState)
-// return (
-//   <div>
-//     <h1>{Localstate.count}</h1>
-//       <p>{Localstate.apiData}</p>
-
-//       {
-//     Localstate.isLoading ? 
-//         <h1>Loading...</h1> : Localstate.error
-//           ? <h1>{Localstate.error}</h1> :
-//           <h1>{Localstate.apiData}</h1>
+  //   const apiReducer = (state , action) => {
+  //     switch(action.type){
+  //       case('FETCH_LOADING') :
+  //         return {
+  //           ...state ,
+  //           isLoading : true
+  //           }
+        
+  //         case('FETCH_SUCCESS') :
+  //           return{ 
+  //             isLoading : false ,
+  //             apiData : action.payLoad,
+  //             error : null
+  //           }
+          
+  //           case('FETCH_ERROR') :
+  //           return{
+  //             isLoading : false , 
+  //             apiData : [], 
+  //             error : action.payLoad 
+  //           }
       
-//     }
+  //         default :
+  //             return state
+  //         }
+  //   }
+  // // useEffect(() => {
+  // //   dispatch({ type: 'FETCH_LOADING' })
 
-      
-//   </div>
-// )
-// }
+  // //   fetch('https://jsonplaceholder.typicode.com/posts')
+  // //     .then(res => res.json())
+  // //     .then(data => {
+  // //       dispatch({ type: 'FETCH_SUCCESS', payload: data })
+  // //     })
+  // //     .catch(err => {
+  // //       dispatch({ type: 'FETCH_ERROR', payload: err })
+  // //     })
+  // // }, [])
 
-// export default A
 
-import React from 'react'
+  //   useEffect(()=> {
+  //     dispatch({type : 'FETCH_LOADING'})
+  //     .fetch('')
+  //       .then((response) => response.json())
 
-function A() {
-  return (
-    <div>A</div>
-  )
-}
+        
+  //   })
 
-export default A
+  //   const [LocalState , dispatch] = useReducer(apiReducer , initialState)
+  //   // console.log(LocalState)
+
+  //   const {isLoading , apiData , error} = LocalState
+
+  //   return (
+  //     <div>
+  //     {
+  //       isLoading ? <h1>Loading....</h1> : error ? <h1>{error.message}</h1> :
+  //         console.log(apiData)
+  //       }
+  //     </div>
+  //   )
+  // }
+
+  // export default A
